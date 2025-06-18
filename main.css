@@ -50,7 +50,7 @@ header nav li a {
     object-fit: contain;
 }
 
-.container {
+.container, h2 {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
@@ -155,4 +155,159 @@ footer {
     background-color: orangered;
     color: black;
     padding: 16px 0;
+}
+
+
+/* seção imagens dos produtos */
+.container-flex {
+    display: flex;
+    gap: 30px; /* espaço entre as imagens */
+}
+
+.container-flex img {
+    width: 100px; /* ou outro tamanho desejado */
+    height: auto;
+}
+
+
+.lista-produtos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-produtos li {
+    list-style: none;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza conteúdo (imagem e botão) no <li> */
+    max-width: 200px; /* ou outro valor desejado */
+    text-align: center;
+}
+
+.lista-produtos li img {
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+.lista-produtos li h3 {
+    margin: 16px 0;
+}
+
+.lista-produtos li button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: orangered;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.lista-produtos li strong {
+    margin: 16px 0;
+    display: block;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .container-flex lista-produtos {
+        display: flex;
+    }
+
+    .container, h2 {
+        max-width: 90%;
+        text-align: justify;
+
+    }
+
+    .contact-metods {
+        display: block;
+        justify-content: space-between;
+    }
+
+    #about .h2 {
+        text-align: justify;
+    }
+
+    #about .container {
+    flex-direction: column;
+    text-align: justify;
+    }
+
+
+    #about .store-front {
+        display: block;
+        margin: 0 auto;
+        width: 300px; /* ou outro tamanho desejado */
+        height: auto;
+        margin-bottom: 30px; /* Espaço de 30px abaixo da imagem */
+    }
+
+    .brands-list {
+        margin-top: 30px; /* Espaço entre o texto e as imagens */
+    }
+
+    .brands-list img {
+        width: 30px;
+        height: auto;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header nav ul {
+        display: block;
+        padding: 0;
+        margin-top: 12px;
+    }
+
+    header nav li {
+        display: block;
+        margin: 8px 0;
+    }
+}
+
+    header h1 {
+        font-size: 40px; /* ou outro tamanho desejado */
+    }
+
+    
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container, h2 {
+        max-width: 80%;
+        text-align: justify;
+    }    
+
+    #about .store-front {
+        display: block;
+        width: 300px; /* ou outro tamanho desejado */
+        margin-top: 50px; /* ajusta esse valor conforme necessário */
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    .contact-metods {
+        display: block;
+        justify-content: space-between;
+    }
+
+
 }
