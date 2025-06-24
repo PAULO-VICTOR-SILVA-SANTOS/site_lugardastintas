@@ -45,7 +45,7 @@ header nav li a {
 }
 
 .container img {
-    width: 150%;
+    width: 50%;
     height: 150%; 
     object-fit: contain;
 }
@@ -186,7 +186,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center; /* centraliza conteúdo (imagem e botão) no <li> */
-    max-width: 200px; /* ou outro valor desejado */
+    max-width: 100px; /* ou outro valor desejado */
     text-align: center;
 }
 
