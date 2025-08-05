@@ -45,7 +45,7 @@ header nav li a {
 }
 
 .container img {
-    width: 50%;
+    width: 100%;
     height: 150%; 
     object-fit: contain;
 }
@@ -227,7 +227,7 @@ footer {
 
     .container, h2 {
         max-width: 90%;
-        text-align: justify;
+        text-align: center;
 
     }
 
@@ -259,8 +259,9 @@ footer {
     }
 
     .brands-list img {
-        width: 30px;
+        width: 70px;
         height: auto;
+        margin-bottom: 16px;
     }
 
     header .container {
@@ -283,6 +284,12 @@ footer {
 
     header h1 {
         font-size: 40px; /* ou outro tamanho desejado */
+    }
+
+    .container .social-links{
+        display: flex; 
+        justify-content: center;        
+        gap: 20px;
     }
 
     
