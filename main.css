@@ -310,8 +310,6 @@ footer {
 
 
     .container .social-links {
-        display: flex;
-        justify-content: center;
         gap: 15px;
     }
 
