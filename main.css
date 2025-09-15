@@ -312,7 +312,7 @@ footer {
     .container .social-links {
         display: flex;
         justify-content: center;
-        gap: 30px;
+        gap: 15px;
     }
 
     #contact p {
