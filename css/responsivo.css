@@ -1,0 +1,77 @@
+@media (max-width: 1067px) {
+    #about .h2 {
+        text-align: justify;
+    }
+
+    #about .container {
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    #about .store-front {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+        /* ou outro tamanho desejado */
+        height: auto;
+        margin-bottom: 30px;
+        /* Espaço de 30px abaixo da imagem */
+    }
+
+
+    .brands-list img {
+        width: 50px;
+        /*Tamanho das imagens dos fornecedores*/
+        margin-bottom: -80px;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    header h1 {
+        font-size: 40px;
+        /* tamanho do nome Lugar das tintas */
+    }
+
+    .container-flex.lista-produtos {
+        display: flex;
+        gap: 80px;
+    }
+
+    .container,
+    h2 {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .contact-metods {
+        display: block;
+        margin-left: -3px;
+    }
+
+
+    .container .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    #contact p {
+        text-align: center;
+        /* Centraliza o texto */
+        margin: 0 auto;
+        /* Mantém centralizado se o container tiver largura menor */
+        max-width: 90%;
+        /* Evita que grude nas bordas da tela */
+    }
+
+    footer .container p {
+        text-align: center;
+        /* deixao texto do rodapé alinhado */
+    }
+
+}
