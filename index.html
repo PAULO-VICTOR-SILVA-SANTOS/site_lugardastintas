@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lugar das tintas - Sua loja de tintas automotivas</title>
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +25,12 @@
                     </li>
                 </ul>
             </nav>
+            <div class="cart-icon">
+                <a href="#" id="cart-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
         </div>
     </header>
     <section id="about">
@@ -49,46 +56,179 @@
     </section>
 
     <section id="product">
-        <h2>Produtos em promoção</h2>
+        <h2>Produtos para Repintura</h2>
         <div class="container">
-            <ul class="container-flex lista-produtos">
-                <li>
-                    <img src="./imagens/verniz 8937.jpg" alt="">
-                    <h3>Verniz alto sólido 8937 lazzuril</h3>
-                    <p>
-                        Verniz de alto rendimento, brilho e durabilidade.
-                    </p>
-                    <strong>R$ 110,00</strong>
-                    <button type="button">Adicionar ao carrinho</button>
-                </li>
-                <li>
-                    <img src="./imagens/verniz ultra 7000.jpg" alt="">
-                    <h3>Verniz ultra 7000 lazzuril</h3>
-                    <p>
-                        Verniz alto sólido e com secagem em 90 minutos.
-                    </p>
-                    <strong>R$ 200,00</strong>
-                    <button type="button">Adicionar ao carrinho</button>
-                </li>
-                <li>
-                    <img src="./imagens/diuente 454 - 900 ml.jpg" alt="">
-                    <h3>Diluente PU 454 - diluição PU</h3>
-                    <p>
-                        Secagem rápida.
-                    </p>
-                    <strong>R$ 39,00</strong>
-                    <button type="button">Adicionar ao carrinho</button>
-                </li>
-                <li>
-                    <img src="./imagens/primer pu 811.jpg" alt="">
-                    <h3>Primer PU 811 maxi Rubber</h3>
-                    <p>
-                        Secagem rápida.
-                    </p>
-                    <strong>R$ 45,00</strong>
-                    <button type="button">Adicionar ao carrinho</button>
-                </li>
-            </ul>
+            <div class="product-category">
+                <h3>Primers</h3>
+                <ul class="container-flex lista-produtos">
+                    <li>
+                        <img src="./imagens/primer%20pu%20811.jpg" alt="Primer PU 811 Maxi Rubber" />
+                        <h3>Primer PU 811 maxi Rubber</h3>
+                        <p>
+                            Secagem rápida.
+                        </p>
+                        <strong>R$ 45,00</strong>
+                        <div class="quantity-container">
+                            <label>Quantidade:</label>
+                            <input type="number" min="1" value="1" class="quantity">
+                        </div>
+                        <button type="button" class="add-to-cart"><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+                    </li>
+                    <li>
+                        <img src="./imagens/primer 8200.jpg" alt="Primer PU 8200 Larruril" />
+                        <h3>Primer PU 8200 Larruril</h3>
+                        <p>
+                            Primer para preparação de superfícies automotivas.
+                        </p>
+                        <strong>R$ 69,00</strong>
+                        <div class="quantity-container">
+                            <label>Quantidade:</label>
+                            <input type="number" min="1" value="1" class="quantity">
+                        </div>
+                        <button type="button" class="add-to-cart"><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+                    </li>
+                    <li>
+                        <img src="./imagens/primer maza 1500.jpg" alt="Primer PU MAZA 1500" />
+                        <h3>Primer PU MAZA 1500</h3>
+                        <p>
+                            Primer de alta aderência para superfícies metálicas.
+                        </p>
+                        <strong>R$ 39,00</strong>
+                        <div class="quantity-container">
+                            <label>Quantidade:</label>
+                            <input type="number" min="1" value="1" class="quantity">
+                        </div>
+                        <button type="button" class="add-to-cart"><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+                    </li>
+                    <li>
+                        <img src="./imagens/primer pu 511 maxi rubber.jpg" alt="Primer PU Maxi Rubber 511" />
+                        <h3>Primer PU Maxi Rubber 511</h3>
+                        <p>
+                            Primer de secagem rápida com acabamento uniforme.
+                        </p>
+                        <strong>R$ 46,00</strong>
+                        <div class="quantity-container">
+                            <label>Quantidade:</label>
+                            <input type="number" min="1" value="1" class="quantity">
+                        </div>
+                        <button type="button" class="add-to-cart"><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="product-category">
+                <h3>Vernizes</h3>
+                <ul class="container-flex lista-produtos">
+                    <li>
+                        <img src="./imagens/verniz 8937.jpg" alt="Verniz alto sólido 8937 Lazzuril" />
+                        <h3>Verniz alto sólido 8937 lazzuril</h3>
+                        <p>
+                            Verniz de alto rendimento, brilho e durabilidade.
+                        </p>
+                        <strong>R$ 110,00</strong>
+                        <div class="quantity-container">
+                            <label>Quantidade:</label>
+                            <input type="number" min="1" value="1" class="quantity">
+                        </div>
+                        <button type="button" class="add-to-cart"><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+                    </li>
+                    <li>
+                        <img src="./imagens/verniz ultra 7000.jpg" alt="Verniz ultra 7000 Lazzuril" />
+                        <h3>Verniz ultra 7000 lazzuril</h3>
+                        <p>
+                            Verniz alto sólido e com secagem em 90 minutos.
+                        </p>
+                        <strong>R$ 200,00</strong>
+                        <div class="quantity-container">
+                            <label>Quantidade:</label>
+                            <input type="number" min="1" value="1" class="quantity">
+                        </div>
+                        <button type="button" class="add-to-cart"><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+                    </li>
+                    <li>
+                        <img src="./imagens/verni maza 1500.jpg" alt="Verniz MAZA 1500" />
+                        <h3>Verniz MAZA 1500</h3>
+                        <p>
+                            Verniz de alto brilho para acabamento automotivo.
+                        </p>
+                        <strong>R$ 45,00</strong>
+                        <div class="quantity-container">
+                            <label>Quantidade:</label>
+                            <input type="number" min="1" value="1" class="quantity">
+                        </div>
+                        <button type="button" class="add-to-cart"><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+                    </li>
+                    <li>
+                        <img src="./imagens/verniz%20ultra%207000.jpg" alt="Verniz alto sólido MAZA 5500" />
+                        <h3>Verniz alto sólido MAZA 5500</h3>
+                        <p>
+                            Verniz com acabamento durável e secagem uniforme.
+                        </p>
+                        <strong>R$ 79,00</strong>
+                        <div class="quantity-container">
+                            <label>Quantidade:</label>
+                            <input type="number" min="1" value="1" class="quantity">
+                        </div>
+                        <button type="button" class="add-to-cart"><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="product-category">
+                <h3>Outros produtos</h3>
+                <ul class="container-flex lista-produtos">
+                    <li>
+                        <img src="./imagens/diuente 454 - 900 ml.jpg" alt="Diluente PU 454" />
+                        <h3>Diluente PU 454 - diluição PU</h3>
+                        <p>
+                            deal para diluição de primers e vernizes automotivos.
+                        </p>
+                        <strong>R$ 42,00</strong>
+                        <div class="quantity-container">
+                            <label>Quantidade:</label>
+                            <input type="number" min="1" value="1" class="quantity">
+                        </div>
+                        <button type="button" class="add-to-cart"><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+                    </li>
+                    <li>
+                        <img src="./imagens/diluente pu maza 5230 - 900 ml.jpg" />
+                        <h3>Diluente PU MAZA 5230 - 900 ml</h3>
+                        <p>
+                            Ideal para diluição de primers e vernizes automotivos.
+                        </p>
+                        <strong>R$ 27,00</strong>
+                        <div class="quantity-container">
+                            <label>Quantidade:</label>
+                            <input type="number" min="1" value="1" class="quantity">
+                        </div>
+                        <button type="button" class="add-to-cart"><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+                    </li>
+                    <li>
+                        <img src="./imagens/thinner sm 800.jpg" />
+                        <h3>Thinner MAZA SM 800 00 ml</h3>
+                        <p>
+                            Solvente para produtos automotivos, sintético e laca,  com baixa odor.
+                        </p>
+                        <strong>R$ 16,00</strong>
+                        <div class="quantity-container">
+                            <label>Quantidade:</label>
+                            <input type="number" min="1" value="1" class="quantity">
+                        </div>
+                        <button type="button" class="add-to-cart"><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+                    </li>
+                    <li>
+                        <img src="./imagens/thinner sm 100.jpg" alt="Thinner SM 100" />
+                        <h3>Thinner SM 100</h3>
+                        <p>
+                            Solvente para produtos automotivos, sintético e laca,  com baixa odor.
+                        </p>
+                        <strong>R$ 20,00</strong>
+                        <div class="quantity-container">
+                            <label>Quantidade:</label>
+                            <input type="number" min="1" value="1" class="quantity">
+                        </div>
+                        <button type="button" class="add-to-cart"><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -114,22 +254,12 @@
                 </div>
                     <ul class="social-links">
                         <li>
-                            <a href="#" title="Siga-nos no Instagram">
+                            <a href="https://www.instagram.com/lugar_das_tintas" title="Siga-nos no Instagram">
                                 <img src="./imagens/instagram.png" alt="Logo do instagram" />
                             </a>                            
                         </li>   
                         <li>
-                            <a href="#" title="Siga-nos no facebook">
-                                <img src="./imagens/facebook.png" alt="Logo do facebook" />
-                            </a>                            
-                        </li> 
-                        <li>
-                            <a href="#" title="Siga-nos no youtube">
-                                <img src="./imagens/youtube.png" alt="Logo do youtube" />
-                            </a>                            
-                        </li> 
-                        <li>
-                            <a href="#" title="Siga-nos no WhatsApp">
+                            <a href="https://wa.me/5583988023716" title="Siga-nos no WhatsApp">
                                 <img src="./imagens/whatsApp.jpg" alt="Logo do WhhatsApp" />
                             </a>                            
                         </li>                                             
@@ -140,6 +270,8 @@
                     <h3>Venha até nós</h3>
                     <p>
                         Rua Vicente costa Filho, 959 sala 102, Varjão - João Pessoa - PB
+                        <br>
+                        fone: (83) 98802-3716
                     </p>
                 </div>
             </div>
@@ -148,9 +280,10 @@
     <footer>
         <div class="container">
             <p>
-                &copy; Lugar das Tintas - Todos os direitos reservados - 2025
+                &copy; Lugar das Tintas - Todos os direitos reservados - 2026
             </p>
         </div>
     </footer>
+    <script src="./cart.js"></script>
 </body>
 </html>
